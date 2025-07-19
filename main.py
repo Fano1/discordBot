@@ -59,9 +59,10 @@ async def on_message(message):
             # response = "Model not found."
             await message.channel.send(f"```\n{response}\n```")
         except Exception as e:
-            await message.channel.send(f"fuck you, that is a stupid thing to utterfrom your vile mouth wtf.")
-
+            await message.channel.send(f"fuck you, that is a stupid thing to utterfrom your vile mouth wtf.") 
     await bot.process_commands(message)
+
+
 
 @bot.command()
 async def helper(ctx):
