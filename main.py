@@ -200,5 +200,33 @@ async def say(ctx, *, text: str):
     # Optional: disconnect after speaking
     # await vc.disconnect()
 
+@bot.command()
+async def esay(ctx, *, text: str):
+    user = ctx.author
+    if user.voice is None:
+        await ctx.send("Bruh, you gotta be in a voice channel to summon me!")
+        return
+
+    channel = user.voice.channel
+    vc = ctx.voice_client
+
+    if not vc:
+        vc = await channel.connect()
+
+    if vc.is_playing():
+        vc.stop()
+
+    print("Playing audio now...")
+    source = FFmpegPCMAudio("voices\\tts-audio.mp3")
+    vc.play(source)
+
+    # Wait until audio finishes playing
+    while vc.is_playing():
+        await asyncio.sleep(1)
+
+    # Optional: disconnect after speaking
+    # await vc.disconnect()
+
+
 bot.run(token_discord, log_handler=handler, log_level=logging.DEBUG)
 

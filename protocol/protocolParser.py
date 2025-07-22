@@ -3,7 +3,6 @@ import io
 # from .api import GEMINI_KEY
 import serial
 import time
-import PIL.Image
 from io import BytesIO
 from PIL import Image
 from google import genai
@@ -26,7 +25,7 @@ def GenerateDefaultText(content):
         )
     )
     return (response.candidates[0].content.parts[0].text)
-
+        
 def GenerateImage(self):
     response = client.models.generate_content(
     # model="gemini-2.0-flash-exp-image-generation",
