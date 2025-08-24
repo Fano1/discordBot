@@ -52,7 +52,7 @@ async def on_message(message):
     
     if message.content.startswith("!ask "):
         query = message.content[len("!ask "):]
-        await message.channel.send("Thinking... 💭")
+        await message.channel.send("Thinking... ")
 
         try:
             response = invokeR(query)
@@ -88,7 +88,7 @@ async def genImg(ctx,* , content: str):
 
             await ctx.send("working", file=pic)
     except FileNotFoundError:
-        await ctx.send("Image not found, you naughty file hoarder 😈 ")
+        await ctx.send("Image not found, you naughty file hoarder  ")
 
 @bot.command()
 async def analyseImg(ctx, *, prompt: str):
@@ -104,9 +104,9 @@ async def analyseImg(ctx, *, prompt: str):
                 time.sleep(1)
                 await ctx.send(f"{response_text}")
             except Exception as e:
-                await ctx.send(f"Something broke 🧨: `{e}`")
+                await ctx.send(f"Something broke : `{e}`")
         else:
-            await ctx.send("That ain’t an image file, buddy 💀")
+            await ctx.send("That ain’t an image file, buddy ")
     else:
         await ctx.send("You forgot the pic, sweetheart")
 
@@ -127,9 +127,9 @@ async def editImg(ctx, *, prompt: str):
                     await ctx.send("working", file=pic)
 
             except Exception as e:
-                await ctx.send(f"Something broke 🧨: `{e}`")
+                await ctx.send(f"Something broke : `{e}`")
         else:
-            await ctx.send("That ain’t an image file, buddy 💀")
+            await ctx.send("That ain’t an image file, buddy ")
     else:
         await ctx.send("You forgot the pic, sweetheart")
 
@@ -224,7 +224,6 @@ async def esay(ctx, *, text: str):
     while vc.is_playing():
         await asyncio.sleep(1)
 
-    # Optional: disconnect after speaking
     # await vc.disconnect()
 
 
