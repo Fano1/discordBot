@@ -2,7 +2,7 @@ from google import genai
 from google.genai import types
 from PIL import Image
 from io import BytesIO
-GEMINI_KEY = 'AIzaSyBn7NdfAQbhbjorEfkTmoTdRRr8wg3A-_M'
+from api import GEMINI_KEY
 
 
 client = genai.Client(api_key= GEMINI_KEY)
