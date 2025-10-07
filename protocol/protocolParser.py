@@ -29,7 +29,7 @@ def GenerateDefaultText(content):
 def GenerateImage(self):
     response = client.models.generate_content(
     # model="gemini-2.0-flash-exp-image-generation",
-    model="gemini-2.0-flash-preview-image-generation",
+    model="gemini-2.5-flash-image-preview",
     contents= self,
     config=types.GenerateContentConfig(
           response_modalities=['Text', 'Image']

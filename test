@@ -1,5 +1,46 @@
-1 plate chana, 1  frooti and 2 samosa
-85 *50 = 4250
-Tea and cookie 
-30 * 50 = 1500
-Total = 5750
+<h1 align="center">Hey, I'm [Your Name] 👋</h1>
+
+<p align="center">
+  <i>AI explorer, code whisperer, and caffeine-dependent lifeform ☕</i>
+</p>
+
+---
+
+### 🧠 About Me
+
+- 🔭 I’m currently building: `cool_project_name`, a [short description of what it does].
+- 🧪 Playing with: PyTorch, LLMs, Transformers, CLIs, and cursed side projects.
+- 🌱 Learning: Deep learning, systems design, GPU wizardry
+- 📫 Reach me: [email@example.com] or [@your_twitter](https://twitter.com)
+- ⚡ Fun fact: I once debugged for 6 hours just to forget a `.to(device)` 😩
+
+---
+
+### 🛠️ Languages & Tools
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,java,react,js,blender,unity,css,python,c,c++,c#,cs,lanchain,pytorch,tensorflow,docker,git,linux,vscode,github" />
+</p>
+
+---
+
+### 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=radical" height="160" />
+</p>
+
+---
+
+### 🧪 Projects I Tinker With
+
+- 🧠 [Bigram Language Model](https://github.com/YOUR_USERNAME/bigram-model) – Just a simple lil' language model that predicts text token-by-token.
+- 🧬 [Neuro2.0](https://github.com/YOUR_USERNAME/neuro2.0) – An experimental PyTorch project where I train my models to feel pain (and accuracy).
+
+---
+
+### 🧛 Dark Vibes Only
+
+> “Code is poetry. Until it's spaghetti. Then it's dinner.”
+
+---
